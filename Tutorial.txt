@@ -1,0 +1,39 @@
+1: Instalamos o sass via npm install -g sass
+
+2: Criamos pasta sass e colocamos arquivo styles.sass dentro dela 
+
+3: criamos index.html e linkamos o arquivo como se fose css
+
+4: Em styles. css os codigos noa tem chave nem ";"
+
+5: pra compilar em css no terminal eu uso sass --watch <sass/styles.sass:css/styles.css>
+
+6: agora é só escrevere em sass e atualizar o navegaor que automaticamente ele copliar pra css
+
+7: criei pasta img com imagens dentro
+
+8: acessei google fonts e copiei o link da font desejada
+9: fui no site cdnjs e copiei o link font awesome e colei no index.html tambem
+
+10:criamos um <header> com class com tags filha dentro com a navbar e os icon dsa redes sociais
+
+11: criamos o <main> depois crimaos <div>s seguindo uma hierarquia com uma principal com a class gallery e as filhas com class gallery card
+
+12: depois do <main> criamos o <footer>
+
+13: criamos um _variables.sass em sass que será o arquivo das variáveis sass, sempre comça com $
+
+14: pra importar as variávei usamos vamos no styles.sass e usamos o @use 'nome do arquivo'  depois chama como color: color: nome do arquivo.nome da variável
+
+15: configurar o sass inserindo as tag filha dentro da linha das tag s pai, no final tudo será compilado para css3
+
+16: crimaos um novo sass _mixins.sass e importamos em styles.sass, no mixins passamos uma rotina de layout fixa pra .container, depois chamamos em styles.sass no .header atravez de @include mixins.container.
+
+17: O & representa a tag pai e pode ser inserida antes de declara a tag filho
+
+18: criamos novo mixin flex-center 
+
+19: observar a hierarquica de styles.sass das tags pai e filho pra poder organiza os mixins e variables da melhor forma
+
+20: crimaos umnovo mixin: @mixin bg-img($img)
+    background-image: url('../img/#{$img}') dessa forma as imagens ficam com a criação dinâmica
